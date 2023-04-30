@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+
+    <title> Rock, Paper, Scissors</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>ROCK <br> PAPER <br> SCISSORS</h1>
+            <div class="score-box">
+                <div class="score-container">
+                    <h4>YOUR SCORE</h4>
+                    <p id="my_score">0</p>
+                </div>
+                <div class="score-container">
+                    <h4>COMPUTER SCORE</h4>
+                    <p id="computer_score">0</p>
+                </div>
+            </div>
+        </header>
+        <main id="main">
+            <button class="btn-circle btn-rock pick" type="button" name="button" data-choice="rock">
+                <span class="b1">
+                    <img src="Assests/rock.png" alt="rock icon">
+                </span>
+            </button>
+            <button class="btn-circle btn-scissors pick" type="button" name="button" data-choice="scissors">
+                <span class="b1">
+                    <img src="Assests/scissors.png" alt="scissors icon">
+                </span>
+            </button>
+            <button class="btn-circle btn-paper pick" type="button" name="button" data-choice="paper">
+                <span class="b1">
+                    <img src="Assests/paper.png" alt="paper icon">
+                </span>
+            </button>
+
+        </main>
+        <div id="rishav">
+            <button id="open" class="btn-rules" type="button" name="button">Rules</button>
+        </div>
+
+        <div class="rules-modal" id="modal">
+
+            <ul> <button id="close" type="button" name="button">
+                    <img src="Assests/X.png" alt="close"> </button>
+                <h1>GAME RULES</h1>
+                <li>Rock beats scissors, paper beats rock, and scissors beat paper.</li>
+                <li>Agree ahead of time whether you'll count off "rock,paper,scissors."</li>
+                <li>Use rock,paper,scissors to sttle minor decisions or simply play to pass the time</li>
+                <li>If both players lay down the same hand, each player lays down another hand.</li>
+            </ul>
+
+        </div>
+        <div class="rules-container"></div>
+    </div>
+
+    <div class="selection" id="selection">
+        <div class="user_choice">
+            <h2>YOU PICKED</h2>
+            <button class="btn-circle btn-paper" id="user_select" type="button" name="button">
+                <span class="b1">
+                    <img src="Assests/paper.png" alt="paper icon">
+                </span>
+            </button>
+        </div>
+
+        <div class="result-text">
+            <h1>YOU <span id="win">WIN</span></h1>
+            <button class="btn-reset" id="reset" type="button" name="button">PLAY AGAIN</button>
+        </div>
+
+        <div class="computer_choice">
+            <h2>PC PICKED</h2>
+            <button class="btn-circle btn-rock" id="computer_select" type="button" name="button">
+                <span class="b1">
+                    <img src="Assests/rock.png" alt="rock icon">
+                </span>
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

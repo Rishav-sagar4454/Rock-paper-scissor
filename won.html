@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You Won</title>
+    <link rel="stylesheet" href="won.css">
+</head>
+
+<body>
+    <div class="main">
+        <img src="Assests/won.png" alt="" id="win">
+        <img src="Assests/stars.png" alt="" id="star">
+        <h1> Hurray!!!</h1>
+        <h2>
+            <pre>You Won the Game</h2>
+        <button type="button" id="input1"> Play again</button>
+    </div>
+    <script>
+        const getid = document.getElementById('input1')
+        getid.addEventListener('click', foo)
+        function foo() {
+            window.location.href = 'game.html'
+        }
+    </script>
+</body>
+<button id="open" class="btn-rules" type="button" name="button">Rules</button>
+
+<div class="rules-container"></div>
+
+</html>
