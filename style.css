@@ -9,14 +9,11 @@ body {
     min-height: 100vh;
 }
 
-
-
 .container {
     width: 900px;
     margin: 0 auto;
 }
 
-/* HEADER SECTION */
 header {
     border: 4px solid #FFFFFF;
     border-radius: 20px;
@@ -56,7 +53,7 @@ h4 {
     width: 60%;
 }
 
-/* Game Section (Before selection)*/
+/* Before selection */
 main {
     display: flex;
     flex-wrap: wrap;
@@ -128,7 +125,7 @@ main::before {
 
 }
 
-/* Game Section (After selection)*/
+/*  After selection */
 .selection {
     display: none;
     grid-template-areas: "user result computer";
@@ -192,8 +189,6 @@ main::before {
     letter-spacing: 2px;
     padding: 10px 40px;
 }
-
-
 
 .rules-modal {
     font-size: larger;

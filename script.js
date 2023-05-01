@@ -30,7 +30,6 @@ winbtn.style.right = '5px';
 winbtn.style.bottom = '30px';
 winbtn.style.display = 'none';
 
-
 let rulesbtn = document.getElementById('rishav')
 rulesbtn.appendChild(winbtn)
 
