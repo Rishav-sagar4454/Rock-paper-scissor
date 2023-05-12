@@ -66,7 +66,7 @@ buttons.forEach(button => {
 resetBtn.addEventListener('click', () => {
     main.style.display = 'flex';
     selection.style.display = 'none';
-    window.location.href = 'Rock-paper-scissor.html'
+    window.location.href = 'index.html'
 
 });
 
